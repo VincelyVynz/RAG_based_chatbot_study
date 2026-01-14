@@ -8,12 +8,7 @@ import numpy as np
 from config import *
 
 
-SYSTEM_PROMPT = (
-    "You are a helpful internal assistant. "
-    "Answer only using the provided context and conversation history. "
-    "If the answer is not in the context, say you do not know. "
-    "Keep responses concise."
-)
+
 
 # ======================
 # LOAD DATA
