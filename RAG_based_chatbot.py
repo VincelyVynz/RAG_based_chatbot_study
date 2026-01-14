@@ -1,8 +1,6 @@
 import requests
 import json
 
-from chatbot_test import user_query
-
 OLLAMA_URL = "http://localhost:11434/api/generate"  # Ollama endpoint for raw text generation
 
 # Model
@@ -29,12 +27,12 @@ index.add(np.array(doc_embeddings, dtype=np.float32))
 
 def search_docs(query, top_k = 2):
     query_emb = embedding_model.encode([query])
-    D, I = index.search(np.array(query_emb, dtype = np.float32), k = top_k)
+    D,I = index.search(np.array(query_emb, dtype = np.float32), k = top_k)
     retrieved_docs = [employee_docs[i] for i in I[0]]
     prompt = SYSTEM_PROMPT + "\n\nContext:\n" + "\n\n".join(retrieved_docs) + f"\n\nUser: {query}\nAssistant:"
 
-    response = requests.post(OLLAMA_URL, json = {"model": OLLAMA_MODEL, "prompt": prompt}).json()
-    return response.get("completion", "").strip()
+    response = requests.post(OLLAMA_URL, json = {"model": OLLAMA_MODEL, "prompt": prompt, "stream": False}).json()
+    return response.get("response", "").strip()
 
 # Chat loop
 
