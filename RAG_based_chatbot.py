@@ -3,13 +3,15 @@ import json
 
 OLLAMA_URL = "http://localhost:11434/api/generate"  # Ollama endpoint for raw text generation
 
-# Model
+# CONSTANTS
 OLLAMA_MODEL = "phi3:mini"
-
-conversation_history = []
+TOP_K = 30
 
 # Behaviour Prompt
 SYSTEM_PROMPT = "You are a helpful internal assistant. Answer only using the provided context and conversation history. If the answer is not in the context, say you do not know. Keep responses concise."
+
+conversation_history = []
+
 
 from sentence_transformers import SentenceTransformer
 import faiss
@@ -25,7 +27,7 @@ dim = doc_embeddings.shape[1]
 index = faiss.IndexFlatL2(dim)
 index.add(np.array(doc_embeddings, dtype=np.float32))
 
-def search_docs(query, top_k = 2):
+def search_docs(query, top_k = TOP_K):
     query_emb = embedding_model.encode([query])
     D,I = index.search(np.array(query_emb, dtype = np.float32), k = top_k)
     retrieved_docs = [employee_docs[i] for i in I[0]]
