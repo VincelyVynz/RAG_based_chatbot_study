@@ -1,0 +1,209 @@
+1. Employee Name: Alice Johnson
+   Department: Research & Development
+   Role: Senior Software Engineer
+   Email: [alice.johnson@technova.com](mailto:alice.johnson@technova.com)
+   Phone: +1-555-1010
+   Bio: Alice has 8 years of experience in backend development, focusing on AI and machine learning systems. She enjoys mentoring junior engineers.
+
+2. Employee Name: Bob Smith
+   Department: Marketing
+   Role: Marketing Manager
+   Email: [bob.smith@technova.com](mailto:bob.smith@technova.com)
+   Phone: +1-555-1020
+   Bio: Bob specializes in digital marketing strategies and brand growth. He has successfully led campaigns that increased user engagement by 45%.
+
+3. Employee Name: Carol Lee
+   Department: Human Resources
+   Role: HR Specialist
+   Email: [carol.lee@technova.com](mailto:carol.lee@technova.com)
+   Phone: +1-555-1030
+   Bio: Carol manages recruitment, onboarding, and employee relations. She focuses on building a positive workplace culture.
+
+4. Employee Name: David Kumar
+   Department: Product Management
+   Role: Product Manager
+   Email: [david.kumar@technova.com](mailto:david.kumar@technova.com)
+   Phone: +1-555-1040
+   Bio: David oversees the development and launch of new software products with a strong Agile background.
+
+5. Employee Name: Eva Martinez
+   Department: Customer Support
+   Role: Support Lead
+   Email: [eva.martinez@technova.com](mailto:eva.martinez@technova.com)
+   Phone: +1-555-1050
+   Bio: Eva leads the support team and drives process improvements to increase customer satisfaction.
+
+6. Employee Name: Frank Wilson
+   Department: Finance
+   Role: Financial Analyst
+   Email: [frank.wilson@technova.com](mailto:frank.wilson@technova.com)
+   Phone: +1-555-1060
+   Bio: Frank handles financial forecasting, budgeting, and performance analysis.
+
+7. Employee Name: Grace Patel
+   Department: Research & Development
+   Role: Data Scientist
+   Email: [grace.patel@technova.com](mailto:grace.patel@technova.com)
+   Phone: +1-555-1070
+   Bio: Grace works on data modeling and predictive analytics for internal products.
+
+8. Employee Name: Henry Thompson
+   Department: IT Operations
+   Role: Systems Administrator
+   Email: [henry.thompson@technova.com](mailto:henry.thompson@technova.com)
+   Phone: +1-555-1080
+   Bio: Henry manages internal infrastructure, servers, and security policies.
+
+9. Employee Name: Irene Zhao
+   Department: Design
+   Role: UX/UI Designer
+   Email: [irene.zhao@technova.com](mailto:irene.zhao@technova.com)
+   Phone: +1-555-1090
+   Bio: Irene designs user-centric interfaces and improves usability across platforms.
+
+10. Employee Name: Jason Miller
+    Department: Sales
+    Role: Account Executive
+    Email: [jason.miller@technova.com](mailto:jason.miller@technova.com)
+    Phone: +1-555-1100
+    Bio: Jason manages enterprise accounts and drives revenue growth.
+
+11. Employee Name: Kavya Nair
+    Department: Quality Assurance
+    Role: QA Engineer
+    Email: [kavya.nair@technova.com](mailto:kavya.nair@technova.com)
+    Phone: +1-555-1110
+    Bio: Kavya ensures software quality through manual and automated testing.
+
+12. Employee Name: Liam O’Connor
+    Department: Research & Development
+    Role: Frontend Engineer
+    Email: [liam.oconnor@technova.com](mailto:liam.oconnor@technova.com)
+    Phone: +1-555-1120
+    Bio: Liam builds responsive web interfaces using modern JavaScript frameworks.
+
+13. Employee Name: Maya Fernandez
+    Department: Marketing
+    Role: Content Strategist
+    Email: [maya.fernandez@technova.com](mailto:maya.fernandez@technova.com)
+    Phone: +1-555-1130
+    Bio: Maya creates content plans aligned with brand and growth objectives.
+
+14. Employee Name: Noah Brown
+    Department: Operations
+    Role: Operations Manager
+    Email: [noah.brown@technova.com](mailto:noah.brown@technova.com)
+    Phone: +1-555-1140
+    Bio: Noah oversees day-to-day operations and process optimization.
+
+15. Employee Name: Olivia Chen
+    Department: Legal
+    Role: Legal Counsel
+    Email: [olivia.chen@technova.com](mailto:olivia.chen@technova.com)
+    Phone: +1-555-1150
+    Bio: Olivia handles contracts, compliance, and legal risk management.
+
+16. Employee Name: Paul Anderson
+    Department: Finance
+    Role: Accounts Manager
+    Email: [paul.anderson@technova.com](mailto:paul.anderson@technova.com)
+    Phone: +1-555-1160
+    Bio: Paul manages accounts payable, receivable, and audits.
+
+17. Employee Name: Queenie Wong
+    Department: Human Resources
+    Role: Talent Acquisition Lead
+    Email: [queenie.wong@technova.com](mailto:queenie.wong@technova.com)
+    Phone: +1-555-1170
+    Bio: Queenie leads hiring initiatives and employer branding.
+
+18. Employee Name: Rahul Mehta
+    Department: Sales
+    Role: Sales Operations Analyst
+    Email: [rahul.mehta@technova.com](mailto:rahul.mehta@technova.com)
+    Phone: +1-555-1180
+    Bio: Rahul analyzes sales data and improves pipeline efficiency.
+
+19. Employee Name: Sofia Rossi
+    Department: Product Management
+    Role: Associate Product Manager
+    Email: [sofia.rossi@technova.com](mailto:sofia.rossi@technova.com)
+    Phone: +1-555-1190
+    Bio: Sofia supports product roadmaps and stakeholder coordination.
+
+20. Employee Name: Tom Becker
+    Department: IT Operations
+    Role: Network Engineer
+    Email: [tom.becker@technova.com](mailto:tom.becker@technova.com)
+    Phone: +1-555-1200
+    Bio: Tom designs and maintains secure network infrastructure.
+
+21. Employee Name: Uma Iyer
+    Department: Research & Development
+    Role: Machine Learning Engineer
+    Email: [uma.iyer@technova.com](mailto:uma.iyer@technova.com)
+    Phone: +1-555-1210
+    Bio: Uma develops and deploys ML models into production systems.
+
+22. Employee Name: Victor Alvarez
+    Department: Customer Support
+    Role: Support Engineer
+    Email: [victor.alvarez@technova.com](mailto:victor.alvarez@technova.com)
+    Phone: +1-555-1220
+    Bio: Victor resolves technical issues and supports enterprise customers.
+
+23. Employee Name: Wendy Park
+    Department: Design
+    Role: Visual Designer
+    Email: [wendy.park@technova.com](mailto:wendy.park@technova.com)
+    Phone: +1-555-1230
+    Bio: Wendy focuses on branding, illustrations, and visual consistency.
+
+24. Employee Name: Xavier Dubois
+    Department: Security
+    Role: Security Analyst
+    Email: [xavier.dubois@technova.com](mailto:xavier.dubois@technova.com)
+    Phone: +1-555-1240
+    Bio: Xavier monitors threats and strengthens cybersecurity posture.
+
+25. Employee Name: Yasmin Khan
+    Department: Compliance
+    Role: Compliance Officer
+    Email: [yasmin.khan@technova.com](mailto:yasmin.khan@technova.com)
+    Phone: +1-555-1250
+    Bio: Yasmin ensures adherence to regulatory and internal standards.
+
+26. Employee Name: Zachary Reed
+    Department: Research & Development
+    Role: DevOps Engineer
+    Email: [zachary.reed@technova.com](mailto:zachary.reed@technova.com)
+    Phone: +1-555-1260
+    Bio: Zachary automates CI/CD pipelines and cloud deployments.
+
+27. Employee Name: Ananya Gupta
+    Department: Analytics
+    Role: Business Analyst
+    Email: [ananya.gupta@technova.com](mailto:ananya.gupta@technova.com)
+    Phone: +1-555-1270
+    Bio: Ananya translates business requirements into data-driven insights.
+
+28. Employee Name: Brian Collins
+    Department: Procurement
+    Role: Procurement Manager
+    Email: [brian.collins@technova.com](mailto:brian.collins@technova.com)
+    Phone: +1-555-1280
+    Bio: Brian manages vendor relationships and cost optimization.
+
+29. Employee Name: Clara Svensson
+    Department: Training
+    Role: Learning & Development Manager
+    Email: [clara.svensson@technova.com](mailto:clara.svensson@technova.com)
+    Phone: +1-555-1290
+    Bio: Clara designs internal training and upskilling programs.
+
+30. Employee Name: Deepak Verma
+    Department: Strategy
+    Role: Strategy Analyst
+    Email: [deepak.verma@technova.com](mailto:deepak.verma@technova.com)
+    Phone: +1-555-1300
+    Bio: Deepak supports leadership with market research and strategic planning.
