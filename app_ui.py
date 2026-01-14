@@ -8,8 +8,6 @@ import numpy as np
 from config import *
 
 
-
-
 # ======================
 # LOAD DATA
 # ======================
@@ -64,20 +62,29 @@ def main(page: ft.Page):
     page.bgcolor = ft.Colors.BLACK
     page.padding = 0
 
-    chat = ft.Column(expand=True, auto_scroll=True, spacing=10)
+    chat = ft.Column(
+        expand=True,
+        auto_scroll=True,
+        spacing=10,
+    )
 
-    def bubble(text_control, is_user):
-        return ft.Container(
-            content=text_control,
-            bgcolor=ft.Colors.BLUE_600 if is_user else ft.Colors.GREY_800,
+    def bubble(text: str, is_user: bool):
+        text_widget = ft.Text(
+            value=text,
+            selectable=True,
+            text_align=ft.TextAlign.RIGHT if is_user else ft.TextAlign.LEFT,
+        )
+
+        bubble_container = ft.Container(
+            content=text_widget,
             padding=12,
-            border_radius=16,
-            margin=ft.margin.only(
-                left=80 if is_user else 10,
-                right=10 if is_user else 80,
-                top=4,
-                bottom=4,
-            ),
+            bgcolor=ft.Colors.BLUE_600 if is_user else ft.Colors.GREY_800,
+            border_radius=18,
+        )
+
+        return ft.Row(
+            controls=[bubble_container],
+            alignment=ft.MainAxisAlignment.END if is_user else ft.MainAxisAlignment.START,
         )
 
     def send(_):
@@ -90,10 +97,11 @@ def main(page: ft.Page):
         input_field.value = ""
         page.update()
 
-        chat.controls.append(bubble(ft.Text(user_msg, selectable=True), True))
+        chat.controls.append(bubble(user_msg, True))
 
-        bot_text = ft.Text("", selectable=True)
-        chat.controls.append(bubble(bot_text, False))
+        bot_row = bubble("", False)
+        bot_text_widget = bot_row.controls[0].content
+        chat.controls.append(bot_row)
         page.update()
 
         def worker():
@@ -102,13 +110,13 @@ def main(page: ft.Page):
             def on_token(tok):
                 nonlocal full_reply
                 full_reply += tok
-                bot_text.value = full_reply
+                bot_text_widget.value = full_reply
                 page.update()
 
             try:
                 stream_rag_response(user_msg, on_token)
             except Exception as e:
-                bot_text.value = f"Error: {e}"
+                bot_text_widget.value = f"Error: {e}"
 
             conversation_history.append((user_msg, full_reply))
             if len(conversation_history) > MAX_HISTORY_TURNS:
@@ -124,7 +132,7 @@ def main(page: ft.Page):
         hint_text="Type a message",
         expand=True,
         filled=True,
-        border_radius=20,
+        border_radius=24,
         on_submit=send,
     )
 
@@ -136,16 +144,10 @@ def main(page: ft.Page):
     page.add(
         ft.Column(
             [
-                ft.Container(
-                    ft.Text("RAG Chatbot", size=18, weight=ft.FontWeight.BOLD),
-                    padding=14,
-                    bgcolor=ft.Colors.GREY_900,
-                ),
-                ft.Divider(height=1),
-                ft.Container(chat, expand=True, padding=10),
+                ft.Container(chat, expand=True, padding=12),
                 ft.Container(
                     ft.Row([input_field, send_button]),
-                    padding=10,
+                    padding=12,
                     bgcolor=ft.Colors.GREY_900,
                 ),
             ],
