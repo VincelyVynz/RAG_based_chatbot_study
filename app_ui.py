@@ -5,14 +5,8 @@ import json
 from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
+from config import *
 
-# ======================
-# CONFIG
-# ======================
-OLLAMA_URL = "http://localhost:11434/api/generate"
-OLLAMA_MODEL = "qwen2.5:1.5b"
-TOP_K = 30
-MAX_HISTORY_TURNS = 5
 
 SYSTEM_PROMPT = (
     "You are a helpful internal assistant. "
