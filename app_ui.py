@@ -65,6 +65,7 @@ def main(page: ft.Page):
     chat = ft.Column(
         expand=True,
         auto_scroll=True,
+        scroll=ft.ScrollMode.AUTO,
         spacing=10,
     )
 
@@ -83,8 +84,13 @@ def main(page: ft.Page):
         )
 
         return ft.Row(
-            controls=[bubble_container],
-            alignment=ft.MainAxisAlignment.END if is_user else ft.MainAxisAlignment.START,
+            controls=[
+                ft.Container(
+                    content=bubble_container,
+                    alignment=ft.Alignment(1.0, 0.0) if is_user else ft.Alignment(-1.0, 0.0),
+                    expand=True
+                )
+            ],
         )
 
     def send(_):
@@ -100,7 +106,8 @@ def main(page: ft.Page):
         chat.controls.append(bubble(user_msg, True))
 
         bot_row = bubble("", False)
-        bot_text_widget = bot_row.controls[0].content
+        # Access the Text widget: Row -> Container(outer) -> Container(inner) -> Text
+        bot_text_widget = bot_row.controls[0].content.content
         chat.controls.append(bot_row)
         page.update()
 
